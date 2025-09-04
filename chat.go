@@ -120,7 +120,8 @@ type ChatCompletionRequest struct {
 	FunctionCall any    `json:"function_call,omitempty"`
 	Tools        []Tool `json:"tools,omitempty"`
 	// This can be either a string or an ToolChoice object.
-	ToolChoice any `json:"tool_choice,omitempty"`
+	ToolChoice   any    `json:"tool_choice,omitempty"`
+	ResultFormat string `json:"result_format,omitempty"`
 }
 
 type ToolType string
